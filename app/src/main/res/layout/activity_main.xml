@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="Body Mass Index Calculator"
-        android:textSize="25sp"
+        android:text="BODY MASS INDEX CALCULATOR"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
@@ -22,9 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:text="Weight(in Kg)"
+        android:text="WEIGHT(in Kg)"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:textColor="#A90BED"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -33,19 +35,25 @@
 
     <EditText
         android:id="@+id/etWeight"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:duplicateParentState="true"
+        android:editable="true"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:text="Height (in cm)"
+        android:text="HEIGHT (in cm)"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:textColor="#A90BED"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -66,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#2CD3BE"
+        android:backgroundTint="#4CAF50"
         android:text="Calculate" />
 
     <TextView
@@ -77,6 +85,7 @@
         android:layout_marginTop="20dp"
         android:text="The BMI is "
         android:textSize="20dp"
+        android:textColor="#95FF5A00"
         android:visibility="gone" />
 
     <TextView
@@ -87,6 +96,7 @@
         android:layout_marginTop="20dp"
         android:text="BMI"
         android:textSize="20dp"
+        android:textColor="#1E38C5"
         android:visibility="gone" />
 
     <TextView
@@ -97,6 +107,7 @@
         android:layout_marginTop="20dp"
         android:text="Status"
         android:textSize="20dp"
+        android:textColor="#2D9C31"
         android:textStyle="bold"
         android:visibility="gone" />
 
